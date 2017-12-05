@@ -1,14 +1,14 @@
-import { FormationPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('formation App', function() {
-  let page: FormationPage;
+describe('untitled App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new FormationPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
